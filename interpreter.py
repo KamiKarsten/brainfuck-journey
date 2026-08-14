@@ -3,7 +3,7 @@ import sys
 MEMORY_SIZE=30000
 CELL_MAX_VALUE=255
 
-def do_loop_magic_i_do_not_fully_understand(code):
+def find_bracket_pairs(code):
     bracket_pairs = {}
     unmatched_opening_brackets = []
 
@@ -43,7 +43,7 @@ def run(code):
     data_pointer = 0
     instruction_pointer = 0
     
-    bracket_pairs = do_loop_magic_i_do_not_fully_understand(code)
+    bracket_pairs = find_bracket_pairs(code)
     
     while instruction_pointer < len(code):
         instruction = code[instruction_pointer]
